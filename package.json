@@ -1,0 +1,26 @@
+{
+  "name": "broco1i-master",
+  "version": "1.0.0",
+  "description": "MicroFarm free to use IoT web application",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "MicroFarm LLC",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.14.2",
+    "nodemon": "^1.19.1"
+  }
+}
